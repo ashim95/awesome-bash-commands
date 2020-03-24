@@ -21,7 +21,7 @@ I use two alternatives for that (of course there are more!!) : `awk 'END{print N
 - To unmount later
   `sudo umount /home/<USER>/Remote`
 
-**Enable directory color in linux shell
+**Enable directory color in linux shell**
 
 ```
 # enable color support of ls and also add handy aliases
@@ -36,7 +36,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 ```
-**Enable source bashrc on ssh login
+**Enable source bashrc on ssh login**
 
 ssh login does not `source ~/.bashrc` on login. Add following to `~/.bash_profile`:
 ```
@@ -44,7 +44,7 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 ```
-**Show only current directory name in bash prompt
+**Show only current directory name in bash prompt**
 
 Copy following to `~/.bashrc`
 
