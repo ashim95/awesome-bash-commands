@@ -51,3 +51,12 @@ Copy following to `~/.bashrc`
 ```
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
 ```
+
+**Setting Default pip cache directory**
+
+Sometimes we have limited `/home/` storage and `~/.cache` can hog a lot of space (especially because of pip), we can either delete it or set a different `cache` directory. Paste following in the `~/.bashrc`
+
+```
+# Set cache directory
+export XDG_CACHE_HOME="$HOME/scr/.cache"
+```
