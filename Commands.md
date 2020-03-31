@@ -60,3 +60,8 @@ Sometimes we have limited `/home/` storage and `~/.cache` can hog a lot of space
 # Set cache directory
 export XDG_CACHE_HOME="$HOME/scr/.cache"
 ```
+
+**Print a column of a tab separeted file with awk**
+```
+cat file.txt | awk 'BEGIN {FS="\t"}; {print $3}'
+```
