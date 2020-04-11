@@ -65,3 +65,13 @@ export XDG_CACHE_HOME="$HOME/scr/.cache"
 ```
 cat file.txt | awk 'BEGIN {FS="\t"}; {print $3}'
 ```
+
+**Revert head to a previous commit on Github**
+
+First we have to do `git pull`, then revert local branch HEAD to the commit you want to revert to 
+
+```git reset --hard <commit_id>```
+
+Then push changes :
+
+```git push -f origin master```
