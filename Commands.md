@@ -75,3 +75,9 @@ First we have to do `git pull`, then revert local branch HEAD to the commit you 
 Then push changes :
 
 ```git push -f origin master```
+
+**Temporarily turn off monitor**
+
+```
+xset dpms force off
+```
