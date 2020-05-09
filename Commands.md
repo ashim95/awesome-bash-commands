@@ -81,3 +81,10 @@ Then push changes :
 ```
 xset dpms force off
 ```
+
+**If there's an error while installing apex, mostly it is due to cuda version mismatch**
+
+- Also use `CUDA_HOME` to set the CUDA path. And the path is not to `lib64`
+```
+export CUDA_HOME=$HOME$/cuda-10.0
+```
